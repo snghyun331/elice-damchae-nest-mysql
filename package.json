@@ -1,15 +1,8 @@
 {
-	"name": "damchae_nest",
-	"version": "1.0.0",
-	"scripts": {
-		"back": "cd back && yarn dev",
-		"front": "cd front && yarn dev",
-		"dev": "concurrently --kill-others-on-fail \"yarn back\" \"yarn front\""
-	},
-	"license": "MIT",
-	"devDependencies": {
-		"concurrently": "^8.2.0",
-		"prettier": "^3.0.0"
-	},
-	"dependencies": {}
+  "name": "damchae-nest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/snghyun331/elice-damchae-nest-mysql.git",
+  "author": "Lee SH <snghyun331@gmail.com>",
+  "license": "MIT"
 }
