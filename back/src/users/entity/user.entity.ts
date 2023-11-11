@@ -5,6 +5,7 @@ import {
   PrimaryGeneratedColumn,
   UpdateDateColumn,
 } from 'typeorm';
+import { Mbti } from './common/user.enums';
 
 @Entity('User')
 export class UserEntity {
@@ -17,8 +18,8 @@ export class UserEntity {
   @Column({ type: 'varchar', nullable: false })
   password: string;
 
-  @Column({ type: 'varchar', nullable: false })
-  mbti: string;
+  @Column({ type: 'enum', enum: Mbti, nullable: false })
+  mbti: Mbti;
 
   @Column({ type: 'varchar', unique: true, nullable: false })
   nickname: string;
