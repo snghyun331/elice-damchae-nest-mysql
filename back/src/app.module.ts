@@ -20,7 +20,7 @@ import { AppService } from './app.service';
       password: process.env.DB_PW,
       database: process.env.DB_NAME,
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
-      synchronize: true,
+      synchronize: false,
     }),
   ],
   controllers: [AppController],

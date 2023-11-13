@@ -43,6 +43,6 @@ export class UserEntity {
   updatedAt: Date;
 
   @OneToOne(() => ImageEntity, { nullable: true })
-  @JoinColumn({ name: 'profileImg' })
-  profileImg?: ImageEntity;
+  @JoinColumn()
+  profileImg: ImageEntity | null; // profileImgId
 }
